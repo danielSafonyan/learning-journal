@@ -25,8 +25,9 @@ body {
 
 .hero-article {
     border: 1px dotted salmon;
-    min-height: 30vh;
     padding: var(--general-padding);
+    min-height: 350px;
+
 
     display: flex;
     flex-direction: column;
@@ -51,12 +52,30 @@ body {
     font-weight: 700;
 }
 
-.article-container {
-    padding: var(--general-padding);
+.hero-text {
+    max-width: 80ch;
 }
 
-.article:not(:last-child) {
-    padding-bottom: var(--general-padding);
+.hero-read {
+    padding: 0.5em 1em;
+    background-color: whitesmoke;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.article-container {
+    padding: var(--general-padding);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+    grid-gap: 1rem;
+}
+
+.article {
+    display: block;
 }
 
 .article-image {
