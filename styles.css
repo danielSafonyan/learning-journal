@@ -98,3 +98,9 @@ body {
     text-align: center;
     padding: 0.5em;
 }
+
+@media screen and (min-width: 1220px) {
+    .article-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
